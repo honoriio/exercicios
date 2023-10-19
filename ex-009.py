@@ -13,7 +13,7 @@ r8 = (numero * 8)
 r9 = (numero * 9)
 r10 = (numero * 10)
 
-
+print('*' * 15)
 print('Tabuada do {}'.format(numero))
 print('{} x  0 = {}'.format(numero, r0))
 print('{} x  1 = {}'.format(numero, r1))
@@ -26,3 +26,4 @@ print('{} x  7 = {}'.format(numero, r7))
 print('{} x  8 = {}'.format(numero, r8))
 print('{} x  9 = {}'.format(numero, r9))
 print('{} x 10 = {}'.format(numero, r10))
+print('*' * 15)
