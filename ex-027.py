@@ -7,4 +7,4 @@ numero = int(input('Insira um numero de 0 a 5 : '))
 if pense == numero:
     print('Você acertou, o numero que pensei é {}'.format(pense))
 else:
-    print('Você errou, o numeró que eu pensei foi {}'.format(pense))
+    print('Você errou, o número que eu pensei foi {}'.format(pense))
