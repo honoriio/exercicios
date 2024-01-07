@@ -11,17 +11,35 @@ print('CADASTRO DE PESSOAS'.center(52))
 print('=' * 52)
 
  
-# Loop para entrada de dados pelo usuario
+# Loop para entrada de dados pelo usuário
 while True:
-    nome = input('Nome: ')
-    idade = int(input('Idade: '))
+    nome = str(input('Nome: '))
+    
+    # Verificando se os valores foram inseridos corretamente
+    if not nome.isalpha():
+        while True:
+            nome = str(input('Valor invalido. Nome: '))
+            if nome.isalpha():
+                break
+            
+    idade = input('Idade: ')
     sexo = input('Sexo [M/F]: ').upper()
+    
+    # Verificando se o valor foi inserido corretamente na variável sexo 
+    if sexo != "M" and sexo != "F":
+        while True:
+            sexo = input('Valor inválido. Digite [M/F]: ').upper() 
+
+            # Verificando se o valor foi inserido corretamente
+            if sexo == "M" or sexo == "F":
+                break
+
     print('-' * 52)
 
     pessoa = {'Nome' : nome, 'Idade' : idade, 'Sexo' : sexo}
     pessoas.append(pessoa)
 
-    # Decisao se ira continuar a entrada de dados 
+    # Decisão se irá continuar a entrada de dados 
     decisao = input('Deseja continuar [S/N]: ').upper()
     print('-' * 52)
 
