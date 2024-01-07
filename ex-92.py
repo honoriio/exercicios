@@ -10,7 +10,7 @@ print('=' * 52)
 print('CADASTRO DE PESSOAS'.center(52))
 print('=' * 52)
 
-
+ 
 # Loop para entrada de dados pelo usuario
 while True:
     nome = input('Nome: ')

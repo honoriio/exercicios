@@ -1,28 +1,33 @@
 import random
+
 jogadores = dict()
 dado = list([1, 2, 3, 4, 5, 6])
+
 print('=' * 52)
 print('JOGO DE DADOS'.center(52))
 print('=' * 52)
 
+# Inicializa os placares dos jogadores
+for i in range(1, 5):
+    jogadores[f'Jogador N: {i}'] = 0
 
-for i in range(4):
-    sorteio = random.choice(dado)
-    jogadores['Jogador N: 1'] = sorteio
-    sorteio = random.choice(dado)
-    jogadores['Jogador N: 2'] = sorteio
-    sorteio = random.choice(dado)
-    jogadores['Jogador N: 3'] = sorteio
-    sorteio = random.choice(dado)
-    jogadores['Jogador N: 4'] = sorteio
+# Realiza quatro rodadas
+for _ in range(1):
+    for jogador in jogadores:
+        sorteio = random.choice(dado)
+        jogadores[jogador] += sorteio
 
-for j, r in jogadores.items():
-    print(f'{j}  PLACAR:  {r}')
+# Exibe os placares dos jogadores
+for jogador, placar in jogadores.items():
+    print(f'{jogador}  PLACAR:  {placar}')
 
 print('=' * 52)
 print('VENCEDOR'.center(52))
 print('=' * 52)
-print(jogadores)
+
+# Encontra e exibe o vencedor (jogador com o maior placar)
+vencedor = max(jogadores, key=jogadores.get)
+print(f'O vencedor é {vencedor} com um placar de {jogadores[vencedor]} pontos.')
 
 print('=' * 52)
 print('FIM DO JOGO!'.center(52))
