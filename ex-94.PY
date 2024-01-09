@@ -1,6 +1,6 @@
-def area(a, b):
-    total = a * b
-    print(f'A area de um terreno {a} x {b} e de {total} m ')
+def area(largura, comprimento):
+    total = largura * comprimento
+    print(f'A area de um terreno {largura} x {comprimento} e de {total} m ')
 
 
 
@@ -8,8 +8,8 @@ print('=' * 52)
 print('CONTROLE DE TERRENOS'.center(52))
 print('=' * 52)
 
-a = float(input('LARGURA (M): '))
-b = float(input('COMPRIMENTO (M): '))
+largura = float(input('LARGURA (M): '))
+comprimento = float(input('COMPRIMENTO (M): '))
 print('-' * 52)
-area(a, b)
+area(largura, comprimento)
 print('-' * 52)

@@ -1,7 +1,7 @@
 def escreva(txt):
-    tam = len(texto)
+    tam = len(texto) + 4
     print('-' * tam)
-    print(txt)
+    print(f'{txt}'.center(tam))
     print('-' * tam)
     
 
