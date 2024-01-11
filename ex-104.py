@@ -27,7 +27,7 @@ def ajuda():
             print(help(conteudo))
 
 
-
+ 
 
 
 
