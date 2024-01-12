@@ -1,4 +1,4 @@
-from utilidades import moedas
+from utilidades.moedas import moedas
 
 valor = float(input('Digite o preco: R$'))
 
