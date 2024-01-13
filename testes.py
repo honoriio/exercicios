@@ -1,11 +1,7 @@
-def fatorial(n):
-    f = 1 
-    for c in range(1, n + 1):
-        f *= c
-        return f
-    num = int(input('Digite um valor: '))
-    fat = fatorial(num)
-    print(f'Ofatorial de {num} e {fat}')
-
-
-fatorial()  
+valor1 = int(input('Informe um valor: '))
+valor2 = int(input('Informe outro valor: '))
+try:
+    resultado = valor1 / valor2
+    print(resultado)
+except:
+    print(f'{valor2} nao pode ser dividido')
